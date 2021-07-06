@@ -6,3 +6,12 @@ Technologies used for this website:
 - Typescript
 - Express.js
 - Pug / Jade (deprecated)
+
+To run this on your own machine/server:
+
+```
+gh repo clone MNDL-limited/mndl-website-remake
+cd mndl-website-remake
+npm i
+npm start
+```
