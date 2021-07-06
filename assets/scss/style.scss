@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$ff-primary: "Raleway", serif;
+$ff-secondary: "Open Sans", serif;
+$ff-tertiary: "Inter", "Poppins", sans-serif;
+
+$fw-primary: 400;
+$fw-header: 600;
+$fw-jumbotron: 900;
+
+$primary: #6b63ff;
+
+/* ---Boilerplate--- */
+
+body {
+	font-family: $ff-primary !important;
+	font-weight: $fw-primary;
+	min-height: 100vh;
+	border: 1px solid black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $ff-secondary !important;
+	font-weight: $fw-header !important;
+}
+
+.jumbo-header {
+	font-weight: $fw-jumbotron !important;
+	font-style: italic;
+}
+
+header * {
+	font-family: $ff-tertiary !important;
+}
+
+footer {
+	margin-top: auto;
+	border: 1px solid transparent;
+}
+
+* {
+	word-wrap: break-word;
+}
+
+#logo {
+	width: 20%;
+}
+
+h1.header {
+	font-weight: 800;
+}
+
+.jumbotron {
+	display: flex;
+	justify-content: center;
+}
+
+/* ---Navigation--- */
+
+.bg-light-2 {
+	background: #eee;
+}
+
+#navbar-brand {
+	height: 50px;
+}
+
+a.nav-link.text-white:hover {
+	color: #aeaeae !important;
+}
+
+.hover-primary {
+	transition: ease-in-out 0.1s;
+	transition: ease 0.2s;
+}
+
+.hover-primary:hover {
+	/* color: #777 !important; */
+	color: $primary !important;
+	transition: ease 0.1s;
+}
+
+.bg-e {
+	background: #eee;
+}
+
+.highlight {
+	background-color: $primary;
+	color: #fff;
+	padding: 0.1rem;
+}
+
+.fc-primary {
+	color: $primary;
+}
+
+.bg-primary {
+	background-color: $primary;
+}
+
+.link-unstyled,
+.link-unstyled:hover {
+	font-style: inherit;
+	color: inherit;
+	font-size: inherit;
+	text-decoration: none;
+	font-variant: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	font-family: inherit;
+	border-radius: inherit;
+	border: inherit;
+	outline: inherit;
+	box-shadow: inherit;
+	padding: inherit;
+	vertical-align: inherit;
+}
+
+.hover-underline:hover {
+	text-decoration: underline;
+}
+
+.hover-e:hover {
+	color: #eee;
+}
+
+$position: left, right, top, bottom;
+$amount: 10, 20, 25, 40, 50, 75, 100;
+
+//! not functional?
+// @each $position, $amount in $position, $amount {
+// 	.#{$position}-#{$amount} {
+// 		position: relative;
+// 		#{property}: #{amount + "%"};
+// 	}
+
+// 	//  ****** example *********\
+// 	//  *                       *
+// 	//  *     .left-25 {        *
+// 	//  * 	    left: 25%;      *
+// 	//  *     }                 *
+// 	//  *                       *
+// 	//  ************************/
+// }
+
+// special case / while above section being fixed
+.left-25 {
+	position: relative;
+	left: 25%;
+}
+
+.left-125 {
+	position: relative;
+	left: 12.5%;
+}
+
+//! not functional?
+// $custom-wh-property: width, height;
+// $custom-wh-amount: 10 20 25 30 40 50 60 70 75 80 90 95 100;
+
+// @each $property, $amount in $custom-wh-property, $custom-wh-amount {
+// 	.#{$property}-#{$amount} {
+// 		#{property}: #{amount + "%"};
+// 	}
+
+// 	//  ****** example *********\
+// 	//  *                       *
+// 	//  *     .width-25 {       *
+// 	//  * 	    width: 25%;     *
+// 	//  *     }                 *
+// 	//  *                       *
+// 	//  ************************/
+// }
+
+.check-list {
+	margin: 0;
+	padding-left: 1.2rem;
+
+	li {
+		position: relative;
+		list-style-type: none;
+		padding-left: 2.5rem;
+		margin-bottom: 0.5rem;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: -2px;
+			width: 5px;
+			height: 11px;
+			border-width: 0 2px 2px 0;
+			border-style: solid;
+			border-color: #00a8a8;
+			transform-origin: bottom left;
+			transform: rotate(45deg);
+		}
+	}
+}
+
+.hoverscale {
+	transition: transform 500ms ease;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+img.hoverscale:hover {
+	transform: scale(1.02);
+}

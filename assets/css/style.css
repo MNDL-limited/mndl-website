@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ---Boilerplate--- */
+body {
+  font-family: "Raleway", serif !important;
+  font-weight: 400;
+  min-height: 100vh;
+  border: 1px solid black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", serif !important;
+  font-weight: 600 !important;
+}
+
+.jumbo-header {
+  font-weight: 900 !important;
+  font-style: italic;
+}
+
+header * {
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+footer {
+  margin-top: auto;
+  border: 1px solid transparent;
+}
+
+* {
+  word-wrap: break-word;
+}
+
+#logo {
+  width: 20%;
+}
+
+h1.header {
+  font-weight: 800;
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---Navigation--- */
+.bg-light-2 {
+  background: #eee;
+}
+
+#navbar-brand {
+  height: 50px;
+}
+
+a.nav-link.text-white:hover {
+  color: #aeaeae !important;
+}
+
+.hover-primary {
+  transition: ease-in-out 0.1s;
+  transition: ease 0.2s;
+}
+
+.hover-primary:hover {
+  /* color: #777 !important; */
+  color: #6b63ff !important;
+  transition: ease 0.1s;
+}
+
+.bg-e {
+  background: #eee;
+}
+
+.highlight {
+  background-color: #6b63ff;
+  color: #fff;
+  padding: 0.1rem;
+}
+
+.fc-primary {
+  color: #6b63ff;
+}
+
+.bg-primary {
+  background-color: #6b63ff;
+}
+
+.link-unstyled,
+.link-unstyled:hover {
+  font-style: inherit;
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  border-radius: inherit;
+  border: inherit;
+  outline: inherit;
+  box-shadow: inherit;
+  padding: inherit;
+  vertical-align: inherit;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.hover-e:hover {
+  color: #eee;
+}
+
+.left-25 {
+  position: relative;
+  left: 25%;
+}
+
+.left-125 {
+  position: relative;
+  left: 12.5%;
+}
+
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.check-list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 5px;
+  height: 11px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #00a8a8;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}
+
+.hoverscale {
+  transition: transform 500ms ease;
+}
+.hoverscale:hover {
+  transform: scale(1.05);
+}
+
+img.hoverscale:hover {
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=style.css.map */
