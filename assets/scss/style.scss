@@ -10,7 +10,12 @@ $fw-primary: 400;
 $fw-header: 600;
 $fw-jumbotron: 900;
 
-$primary: #6b63ff;
+$primary: #21d3ff;
+$secondary: #ff7b4e;
+$tertiary: #00e500;
+$quaternary: #1a00ff;
+$colors: primary $primary, secondary $secondary, tertiary $tertiary,
+	quarternary $quaternary;
 
 /* ---Boilerplate--- */
 
@@ -79,25 +84,26 @@ a.nav-link.text-white:hover {
 	color: #aeaeae !important;
 }
 
-.hover-primary {
-	transition: ease-in-out 0.1s;
-	transition: ease 0.2s;
-}
+@each $name, $color in $colors {
+	.hover-#{$name} {
+		transition: ease-in-out 0.1s;
+		transition: ease 0.2s;
 
-.hover-primary:hover {
-	/* color: #777 !important; */
-	color: $primary !important;
-	transition: ease 0.1s;
+		&:hover {
+			color: $color !important;
+			transition: ease 0.1s;
+		}
+	}
+
+	.highlight-#{$name} {
+		background-color: $color;
+		color: #fff;
+		padding: 0.1rem;
+	}
 }
 
 .bg-e {
 	background: #eee;
-}
-
-.highlight {
-	background-color: $primary;
-	color: #fff;
-	padding: 0.1rem;
 }
 
 .fc-primary {

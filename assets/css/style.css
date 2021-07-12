@@ -70,29 +70,72 @@ a.nav-link.text-white:hover {
   transition: ease-in-out 0.1s;
   transition: ease 0.2s;
 }
-
 .hover-primary:hover {
-  /* color: #777 !important; */
-  color: #6b63ff !important;
+  color: #21d3ff !important;
   transition: ease 0.1s;
+}
+
+.highlight-primary {
+  background-color: #21d3ff;
+  color: #fff;
+  padding: 0.1rem;
+}
+
+.hover-secondary {
+  transition: ease-in-out 0.1s;
+  transition: ease 0.2s;
+}
+.hover-secondary:hover {
+  color: #ff7b4e !important;
+  transition: ease 0.1s;
+}
+
+.highlight-secondary {
+  background-color: #ff7b4e;
+  color: #fff;
+  padding: 0.1rem;
+}
+
+.hover-tertiary {
+  transition: ease-in-out 0.1s;
+  transition: ease 0.2s;
+}
+.hover-tertiary:hover {
+  color: #00e500 !important;
+  transition: ease 0.1s;
+}
+
+.highlight-tertiary {
+  background-color: #00e500;
+  color: #fff;
+  padding: 0.1rem;
+}
+
+.hover-quarternary {
+  transition: ease-in-out 0.1s;
+  transition: ease 0.2s;
+}
+.hover-quarternary:hover {
+  color: #1a00ff !important;
+  transition: ease 0.1s;
+}
+
+.highlight-quarternary {
+  background-color: #1a00ff;
+  color: #fff;
+  padding: 0.1rem;
 }
 
 .bg-e {
   background: #eee;
 }
 
-.highlight {
-  background-color: #6b63ff;
-  color: #fff;
-  padding: 0.1rem;
-}
-
 .fc-primary {
-  color: #6b63ff;
+  color: #21d3ff;
 }
 
 .bg-primary {
-  background-color: #6b63ff;
+  background-color: #21d3ff;
 }
 
 .link-unstyled,
