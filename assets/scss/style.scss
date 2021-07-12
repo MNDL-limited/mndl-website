@@ -14,11 +14,14 @@ $primary: #6b63ff;
 
 /* ---Boilerplate--- */
 
+html,
 body {
 	font-family: $ff-primary !important;
 	font-weight: $fw-primary;
-	min-height: 100vh;
-	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: auto;
 }
 
 h1,
@@ -216,4 +219,9 @@ $amount: 10, 20, 25, 40, 50, 75, 100;
 
 img.hoverscale:hover {
 	transform: scale(1.02);
+}
+
+// Project Hall
+
+#ProjectHallHeader {
 }

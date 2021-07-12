@@ -1,0 +1,21 @@
+extends ../sections/master
+block content
+    title The Project Hall
+    .my-5
+        #ProjectHallHeader.text-center
+            img.w-50(src='/img/products.svg')
+            h1 The Project Hall
+        h2 This page is under reconstruction.
+        pre.mt-5.border
+            code.language-typescript.
+                // reversing a string
+                const it = (s: string) => { let x = []; for (let i = s.length - 1; i > -1; i--) { x.push(s[i]); } return x.join(''); };
+
+                // fib
+                const fib = (n: number, last_element: boolean) => { n = n - 2; let x = [0, 1]; for (let i = 0; i < n; i++) { x.push(x[x.length - 2] + x[x.length - 1]) } return last_element ? x[x.length - 1] : x; };
+
+                // recursion
+                const re = (n: number, b: boolean) => { b ? console.log(n) : {}; return n != 0 ? re(n < 0 ? n + 1 : n - 1, b) : n; };
+
+                // debug
+                console.log(fib(30, false));

@@ -1,0 +1,9 @@
+extends ./sections/master
+
+block content
+    .p-3
+        h1= message
+            span.ms-3.text-danger= status
+        pre
+            code.
+                #{stack}

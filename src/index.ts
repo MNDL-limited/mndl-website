@@ -1,23 +1,23 @@
 // Imports
-import express from "express";
-import fs from "fs-extra";
+import express, { Request, Response, NextFunction } from "express";
 import bodyParser from "body-parser";
 import session from "express-session";
+import dotenv from "dotenv";
 import path from "path";
-import pug from "pug";
 
-// Creating a new express instance
+// Setup
 const app = express();
+dotenv.config();
 
 // Cookies/session
-app.set("trust proxy", 1); // trust first proxy
+app.set("trust proxy", 1);
 app.use(
 	session({
 		secret: "1234ritro_secure!#$",
 		resave: false,
 		saveUninitialized: true,
 		cookie: {
-			secure: true, // true if httpS
+			secure: true, // true if https (not http)
 		},
 	})
 );
@@ -35,16 +35,13 @@ app.use(express.static(path.join(__dirname, "../assets")));
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "../views"));
 
-// // Catch 404 and forward to error handler
-// app.use(function (req, res, next) {
-// 	var err = new Error("Not Found");
-// 	res.send(err); // If there would ever be a visual UI, this would be a custom page and res.render();
-// 	return next(err);
-// });
-
 // Router
 import router from "./router/index";
-app.use(router);
+app.use("/", router);
+
+// Middleware
+import error from "./middleware/error";
+app.use(error);
 
 // Start server
 const port = process.env.PORT || 1337;
