@@ -1,9 +1,9 @@
 extends ./sections/master
 
 block content
-    .p-3
-        h1= message
-            span.ms-3.text-danger= status
-        pre
-            code.
-                #{stack}
+    .text-center.row.d-flex.justify-content-center.align-items-center
+        .col-6
+            img.p-5.w-100(src="/img/lost.svg")
+        .col-6.text-center
+            h1 Lost?
+            a.lead.text-reset.hover-quarternary(href="/") Head back to the home page!

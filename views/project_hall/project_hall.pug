@@ -1,12 +1,13 @@
 extends ../sections/master
 block content
     title The Project Hall
-    .my-5
+    .my-5.text-center
         #ProjectHallHeader.text-center
-            img.w-50(src='/img/products.svg')
-            h1 The Project Hall
-        h2 This page is under reconstruction.
-        pre.mt-5.border
+            img.w-50(src='/img/under construction.svg')
+            h1.mt-3 The Project Hall is under construction!
+
+        p.lead.mt-3 Meanwhile, enjoy reading some fun code!
+        pre.border
             code.language-typescript.
                 // reversing a string
                 const it = (s: string) => { let x = []; for (let i = s.length - 1; i > -1; i--) { x.push(s[i]); } return x.join(''); };

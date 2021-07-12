@@ -5,9 +5,14 @@
         img.w-100(src='/img/version control.svg' alt='source-control-svg')
 
     .col-md-7
-        h1 MNDL on Github
-        p.lead MNDL projects are open-sourced and published on the company GitHub unless requested otherwise!
-        a.lead.m-0.hover-primary.text-dark(href='https://github.com/MNDL-limited') <b>See projects</b>
+        .d-none.d-md-block
+            h3
+                pre
+                    code.language-plaintext Open source projects!
+        .d-md-none
+            h1 MNDL on Github
+        p.lead MNDL does lots of work for the open source community! For more information, check us out on #[a.text-reset(href='https://github.com/MNDL-limited') Github]!
+        a.lead.m-0.hover-quarternary.text-dark(href='https://github.com/MNDL-limited') <b>See projects</b>
 
     // Illustration on desktop/larger viewports
     .col-md-5.mb-3.mb-md-0.d-none.d-md-block
