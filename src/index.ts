@@ -6,8 +6,8 @@ import dotenv from "dotenv";
 import path from "path";
 
 // Setup
-const app = express();
 dotenv.config();
+const app = express();
 
 // Cookies/session
 app.set("trust proxy", 1);
